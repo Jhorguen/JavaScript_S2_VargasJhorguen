@@ -27,10 +27,10 @@ function buscarPersonaje() {
                         let division = document.getElementById("resultados");
                         division.innerHTML += `
                         <div class="card">
-            <img src="${daticos["results"][i]["image"]}" alt="">
+            <img src="${daticos["results"][i]["image"]["url"]}" alt="">
             <h3>${daticos["results"][i]["name"]}</h3>
-            <p><strong>Status:</strong>${daticos["results"][i]["status"]}</p>
-            <p><strong>Specie:</strong>${daticos["results"][i]["species"]}</p>
+            <p><strong>Fuerza:</strong>${daticos["results"][i]["powerstats"]["strength"]}</p>
+            <p><strong>Nombre Completo:</strong>${daticos["results"][i]["biography"]["full-name"]}</p>
         </div>
                         `
                         console.log(daticos["results"][i]["name"]);
